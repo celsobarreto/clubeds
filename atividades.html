@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atividades — ClubeDS</title>
+  <meta name="description" content="Cursos, oficinas e palestras do ClubeDS." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+         <!--<span class="brand__logo" aria-hidden="true">{"</>"}</span>-->
+        <span class="brand__logo" aria-hidden="true">
+          <img src="img/logo2.png" alt="Logo ClubeDS">
+        </span>
+        <span class="brand__text"><strong>ClubeDS</strong><small>Clube de Programação</small></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav__toggle-lines" aria-hidden="true"></span>
+      </button>
+
+            <nav class="nav" data-menu>
+        <a href="index.html" class="nav__link is-active">Início</a>
+        <a href="atividades.html" class="nav__link">Atividades</a>
+        <a href="eventos.html" class="nav__link">Eventos</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="cadastro.html" class="nav__link nav__cta">Quero participar</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="pagehead">
+      <div class="container">
+        <h1>Atividades</h1>
+        <p class="muted">Cursos, oficinas e palestras pensados para desenvolver técnica + portfólio.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <article class="card">
+            <h2 class="card__title">Cursos</h2>
+            <p class="muted">Trilhas estruturadas (módulos) com checkpoints de aprendizado.</p>
+            <ul class="list">
+              <li>Fundamentos de Programação</li>
+              <li>Web (HTML, CSS, JS)</li>
+              <li>Git/GitHub e Deploy</li>
+              <li>APIs e Backend</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2 class="card__title">Oficinas</h2>
+            <p class="muted">Encontros práticos com entrega no final.</p>
+            <ul class="list">
+              <li>Landing page responsiva</li>
+              <li>Programando com IA</li>
+              <li>Consumo de API (fetch)</li>
+              <li>Projeto em equipe</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2 class="card__title">Palestras</h2>
+            <p class="muted">Carreira, mercado, soft skills e tendências.</p>
+            <ul class="list">
+              <li>Portfólio que emprega</li>
+              <li>Como estudar programação</li>
+              <li>Carreira dev no Brasil</li>
+              <li>Boas práticas e qualidade</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cta cta--compact">
+          <div class="cta__content">
+            <h3>Quer receber o calendário?</h3>
+            <p>Cadastre-se para receber as datas das próximas atividades.</p>
+          </div>
+          <a class="btn btn--primary" href="cadastro.html">Fazer cadastro</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="muted">© <span data-year></span> ClubeDS</div>
+      <div class="footer__links">
+        <a href="index.html">Início</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="cadastro.html">Cadastro</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

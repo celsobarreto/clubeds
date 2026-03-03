@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eventos — ClubeDS</title>
+  <meta name="description" content="Calendário e próximos encontros do ClubeDS." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+         <!--<span class="brand__logo" aria-hidden="true">{"</>"}</span>-->
+        <span class="brand__logo" aria-hidden="true">
+          <img src="img/logo2.png" alt="Logo ClubeDS">
+        </span>
+        <span class="brand__text"><strong>ClubeDS</strong><small>Clube de Programação</small></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav__toggle-lines" aria-hidden="true"></span>
+      </button>
+
+    <nav class="nav" data-menu>
+        <a href="index.html" class="nav__link is-active">Início</a>
+        <a href="atividades.html" class="nav__link">Atividades</a>
+        <a href="eventos.html" class="nav__link">Eventos</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="cadastro.html" class="nav__link nav__cta">Quero participar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagehead">
+      <div class="container">
+        <h1>Eventos</h1>
+        <p class="muted">Aqui você divulga as próximas oficinas/palestras e chamadas de projetos.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          <article class="card event">
+            <div class="event__meta">
+              <span class="pill">Oficina</span>
+              <span class="muted">Duração: 2h</span>
+            </div>
+            <h2 class="card__title">Git e GitHub na prática</h2>
+            <p class="muted">Branch, pull request e revisão de código com um mini-projeto.</p>
+            <div class="event__footer">
+              <span class="muted">Data: a definir</span>
+              <a class="btn btn--ghost" href="cadastro.html">Quero participar</a>
+            </div>
+          </article>
+
+          <article class="card event">
+            <div class="event__meta">
+              <span class="pill">Palestra</span>
+              <span class="muted">Duração: 1h</span>
+            </div>
+            <h2 class="card__title">Portfólio que abre portas</h2>
+            <p class="muted">O que colocar, como apresentar e como evoluir seus projetos.</p>
+            <div class="event__footer">
+              <span class="muted">Data: a definir</span>
+              <a class="btn btn--ghost" href="cadastro.html">Receber aviso</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Observação:</strong> você pode manter essa página atualizada manualmente.
+          Se quiser, depois eu te ensino a gerar os eventos automaticamente via JSON.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="muted">© <span data-year></span> ClubeDS</div>
+      <div class="footer__links">
+        <a href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="cadastro.html">Cadastro</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

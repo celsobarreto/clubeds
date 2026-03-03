@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro — ClubeDS</title>
+  <meta name="description" content="Cadastro de membros do ClubeDS." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+         <!--<span class="brand__logo" aria-hidden="true">{"</>"}</span>-->
+        <span class="brand__logo" aria-hidden="true">
+          <img src="img/logo2.png" alt="Logo ClubeDS">
+        </span>
+        <span class="brand__text"><strong>ClubeDS</strong><small>Clube de Programação</small></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav__toggle-lines" aria-hidden="true"></span>
+      </button>
+
+       <nav class="nav" data-menu>
+        <a href="index.html" class="nav__link is-active">Início</a>
+        <a href="atividades.html" class="nav__link">Atividades</a>
+        <a href="eventos.html" class="nav__link">Eventos</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="cadastro.html" class="nav__link nav__cta">Quero participar</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="pagehead">
+      <div class="container">
+        <h1>Cadastro de membro</h1>
+        <p class="muted">Preencha para receber o calendário e entrar na lista do clube.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          <form class="card form" id="formCadastro" novalidate>
+            <h2 class="card__title">Seus dados</h2>
+
+            <label class="field">
+              <span>Nome completo</span>
+              <input type="text" name="nome" placeholder="Ex.: João da Silva" required />
+              <small class="field__hint" data-error-for="nome"></small>
+            </label>
+
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="voce@exemplo.com" required />
+              <small class="field__hint" data-error-for="email"></small>
+            </label>
+
+            <label class="field">
+              <span>Telefone/WhatsApp</span>
+              <input type="tel" name="telefone" placeholder="(71) 99999-9999" />
+            </label>
+
+            <label class="field">
+              <span>Turma / Curso</span>
+              <input type="text" name="turma" placeholder="Ex.: Técnico em Desenvolvimento de Sistemas" />
+            </label>
+
+            <label class="field">
+              <span>Nível atual</span>
+              <select name="nivel" required>
+                <option value="">Selecione…</option>
+                <option>Iniciante</option>
+                <option>Intermediário</option>
+                <option>Avançado</option>
+              </select>
+              <small class="field__hint" data-error-for="nivel"></small>
+            </label>
+
+            <label class="field field--check">
+              <input type="checkbox" name="matricula" required />
+              <span>Declaro que estou matriculado(a) (ou em processo de matrícula) para ter acesso completo às atividades.</span>
+            </label>
+            <small class="field__hint" data-error-for="matricula"></small>
+
+            <button class="btn btn--primary btn--block" type="submit">Enviar cadastro</button>
+
+            <p class="muted tiny">
+              * Versão estática: este formulário redireciona para uma página de obrigado.
+              Depois podemos integrar com Google Forms, Supabase ou e-mail.
+            </p>
+          </form>
+
+          <aside class="card">
+            <h2 class="card__title">O que acontece depois?</h2>
+            <ol class="steps">
+              <li>Você entra na lista do clube</li>
+              <li>Recebe datas e comunicados</li>
+              <li>Participa de oficinas e projetos</li>
+              <li>Constrói portfólio com orientação</li>
+            </ol>
+
+            <hr class="sep" />
+
+            <h3>Regras rápidas</h3>
+            <ul class="list">
+              <li>Matrícula ativa para acesso completo</li>
+              <li>Eleições da diretoria a cada 12 meses</li>
+              <li>Presidência: docentes Celso e Anildo</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="muted">© <span data-year></span> ClubeDS</div>
+      <div class="footer__links">
+        <a href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="eventos.html">Eventos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClubeDS — Clube de Programação</title>
+  <meta name="description" content="Clube de programação para alunos matriculados — projetos, oficinas, palestras e desenvolvimento prático." />
+  <link rel="stylesheet" href=" css/style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Página inicial ClubeDS">
+        <!--<span class="brand__logo" aria-hidden="true">{"</>"}</span>-->
+        <span class="brand__logo" aria-hidden="true">
+          <img src="img/logo2.png" alt="Logo ClubeDS">
+        </span>
+        <span class="brand__text">
+          <strong>ClubeDS</strong>
+          <small>Clube de Programação</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav__toggle-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" data-menu>
+        <a href="index.html" class="nav__link is-active">Início</a>
+        <a href="atividades.html" class="nav__link">Atividades</a>
+        <a href="eventos.html" class="nav__link">Eventos</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="cadastro.html" class="nav__link nav__cta">Quero participar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <!--<p class="badge">Ambiente pedagógico • prática real • mentoria</p>-->
+          <center>
+          <h1>Um clube para construir projetos de verdade - com método, colaboração e evolução.</h1>
+          <p class="hero__lead">
+            O ClubeDS é um espaço de aprendizagem prática para alunos do curso técnico,
+            com oficinas, palestras, trilhas e projetos guiados.
+          </p>
+          </center>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="cadastro.html">Quero me cadastrar</a>
+            <a class="btn btn--ghost" href="#como-funciona">Como funciona</a>
+          </div>
+
+          <div class="hero__mini">
+            <div class="mini">
+              <strong>Foco</strong>
+              <span>Portfólio + mercado</span>
+            </div>
+            <div class="mini">
+              <strong>Rotina</strong>
+              <span>Oficinas e projetos</span>
+            </div>
+            <div class="mini">
+              <strong>Base</strong>
+              <span>Git + Deploy</span>
+            </div>
+          </div>
+
+          <ul class="hero__bullets">
+            <li>Trilhas por nível (iniciante → avançado)</li>
+            <li>Projetos em equipe e portfólio</li>
+            <li>Prática com Git/GitHub e deploy</li>
+          </ul>
+        </div>
+
+        <!-- CARD LATERAL -->
+        <div class="hero__card">
+          <div class="card">
+            <h2 class="card__title">Destaques</h2>
+
+            <div class="kpis">
+              <div class="kpi">
+                <strong>Oficinas</strong>
+                <span>hands-on semanais</span>
+              </div>
+              <div class="kpi">
+                <strong>Palestras</strong>
+                <span>carreira e mercado</span>
+              </div>
+              <div class="kpi">
+                <strong>Projetos</strong>
+                <span>cases para portfólio</span>
+              </div>
+            </div>
+
+            <hr class="sep" />
+
+            <div class="stats">
+              <div class="stat">
+                <span class="muted">Ciclos</span>
+                <strong>Mensais</strong>
+              </div>
+              <div class="stat">
+                <span class="muted">Formato</span>
+                <strong>Prático</strong>
+              </div>
+              <div class="stat">
+                <span class="muted">Entrega</span>
+                <strong>Git + Deploy</strong>
+              </div>
+            </div>
+
+            <p class="muted tiny">
+              * A participação completa nas atividades exige matrícula ativa.
+            </p>
+
+            <a class="btn btn--primary btn--block" href="atividades.html">Ver atividades</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARCAS / PARCEIROS (placeholder) -->
+    <section class="section section--thin">
+      <div class="container">
+        <div class="logos">
+          <span class="muted">Tecnologias/temas:</span>
+          <span class="logo-pill">HTML</span>
+          <span class="logo-pill">CSS</span>
+          <span class="logo-pill">JavaScript</span>
+          <span class="logo-pill">GitHub</span>
+          <span class="logo-pill">Vercel</span>
+          <span class="logo-pill">APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Como o ClubeDS funciona</h2>
+          <p>Organização simples, rotina consistente e foco no desenvolvimento do aluno.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Trilhas e desafios</h3>
+            <p>
+              Você evolui por desafios progressivos: fundamentos, web, backend,
+              dados e projetos integradores.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Aprendizagem com prática</h3>
+            <p>
+              Você aprende fazendo, com revisão de código, pair programming e
+              boas práticas.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Portfólio e vitrine</h3>
+            <p>
+              Cada ciclo gera entregas reais: páginas web, APIs, dashboards,
+              automações e apresentação final.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE / MISSÃO -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="split">
+          <div class="split__content">
+            <h2>O ClubeDS é um ambiente pedagógico e didático</h2>
+            <p class="muted">
+              Criado para fortalecer a aprendizagem no curso técnico por meio de projetos,
+              cultura de colaboração e desenvolvimento contínuo.
+            </p>
+
+            <div class="checks">
+              <div class="check">Rotina de prática com entregas</div>
+              <div class="check">Comunidade e apoio entre alunos</div>
+              <div class="check">Visão de mercado e carreira</div>
+              <div class="check">Qualidade: código limpo e organização</div>
+            </div>
+          </div>
+
+          <div class="split__card card">
+            <h3 class="card__title">Entrega do aluno</h3>
+            <p class="muted">Ao longo do ciclo, você sai com:</p>
+            <ul class="list">
+              <li>Repositório no GitHub bem organizado</li>
+              <li>Deploy no Vercel (site no ar)</li>
+              <li>Projeto com README e evidências</li>
+              <li>Apresentação final (pitch técnico)</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="cadastro.html">Entrar no clube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRILHAS -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Trilhas do ClubeDS</h2>
+          <p>Um caminho claro para evoluir, sem pular etapas importantes.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Trilha 1 - Fundamentos</h3>
+            <p class="muted">Lógica, estrutura, organização e rotina.</p>
+            <ul class="list">
+              <li>VS Code</li>
+              <li>HTML semântico</li>
+              <li>CSS base</li>
+              <li>JS básico</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Trilha 2 - Web + Portfólio</h3>
+            <p class="muted">Páginas reais e responsivas.</p>
+            <ul class="list">
+              <li>Layout responsivo</li>
+              <li>Formulários</li>
+              <li>Acessibilidade</li>
+              <li>Deploy no Vercel</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Trilha 3 - Projetos e Equipe</h3>
+            <p class="muted">Trabalho em grupo e práticas do mercado.</p>
+            <ul class="list">
+              <li>Git flow simples</li>
+              <li>Issues e PRs</li>
+              <li>Revisão de código</li>
+              <li>Apresentação final</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDÁRIO / PRÓXIMOS ENCONTROS (HOME) -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>Próximos encontros</h2>
+          <p>Você pode atualizar aqui manualmente (depois automatizamos com JSON).</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card event">
+            <div class="event__meta">
+              <span class="pill">Oficina</span>
+              <span class="muted">Duração: 2h</span>
+            </div>
+            <h3 class="card__title">Git e GitHub na prática</h3>
+            <p class="muted">Branch, pull request e revisão com mini-projeto.</p>
+            <div class="event__footer">
+              <span class="muted">Data: a definir</span>
+              <a class="btn btn--ghost" href="eventos.html">Ver todos</a>
+            </div>
+          </article>
+
+          <article class="card event">
+            <div class="event__meta">
+              <span class="pill">Palestra</span>
+              <span class="muted">Duração: 1h</span>
+            </div>
+            <h3 class="card__title">Portfólio que abre portas</h3>
+            <p class="muted">O que colocar, como apresentar e como evoluir.</p>
+            <div class="event__footer">
+              <span class="muted">Data: a definir</span>
+              <a class="btn btn--ghost" href="cadastro.html">Receber aviso</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA (HOME) -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Galeria</h2>
+          <p>Espaço para fotos das oficinas, palestras e apresentações.</p>
+        </header>
+
+        <div class="gallery">
+          <div class="gallery__item">Imagem 1</div>
+          <div class="gallery__item">Imagem 2</div>
+          <div class="gallery__item">Imagem 3</div>
+          <div class="gallery__item">Imagem 4</div>
+          <div class="gallery__item">Imagem 5</div>
+          <div class="gallery__item">Imagem 6</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPE (HOME) -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>Coordenação e suporte</h2>
+          <p>Referências do clube e organização interna.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">Celso Barreto</div>
+            <center> <p> <img src="img/celso2.jpg" alt="" width="200" height="300"></p></center>
+            <h3 class="card__title">Docente • Presidência</h3>
+            <a href="https://lattes.cnpq.br/1499121169077928" target="_blank"><p class="muted">currículo lattes</p></a>
+          </article>
+
+          <article class="card person">
+            <div class="avatar" aria-hidden="false">Anildo Mattos</div>
+            <center> <p> <img src="img/anildo.jpeg" alt="" width="200" height="300"></p></center>
+            <h3 class="card__title">Docente • Presidência</h3>
+            <a href="https://lattes.cnpq.br/8305975929277094" target="_blank"><p class="muted">currículo lattes</p></a>
+          </article>
+
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">DS</div>
+            <h3 class="card__title">Diretoria (alunos)</h3>
+            <p class="muted">Eleição a cada 12 meses</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGRAS (HOME) -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Regras de participação</h2>
+          <p>Transparência e organização para o clube rodar bem durante o ano.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Matrícula ativa</h3>
+            <p>
+              Para ter acesso a todas as atividades (oficinas, trilhas e projetos),
+              o membro precisa estar <strong>devidamente matriculado</strong>.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Diretoria e eleições</h3>
+            <p>
+              Haverá <strong>eleições para a diretoria</strong> a cada <strong>12 meses</strong>.
+              Somente alunos matriculados podem participar e ocupar cargos.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Presidência</h3>
+            <p>
+              A presidência será ocupada pelos docentes <strong>Celso</strong> e <strong>Anildo</strong>,
+              informados de todas as ações do clube. Em caso de desistência, haverá substituição conforme regra interna.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Conduta</h3>
+            <p>
+              Respeito, colaboração e compromisso com entregas. O clube é um ambiente
+              de aprendizado e desenvolvimento humano e técnico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>Perguntas frequentes</h2>
+          <p>Respostas rápidas para dúvidas comuns.</p>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Preciso estar matriculado para participar?</summary>
+            <p class="muted">Para acesso completo às atividades, sim. Você pode acompanhar comunicados, mas a participação integral exige matrícula ativa.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Como funcionam as eleições da diretoria?</summary>
+            <p class="muted">A cada 12 meses. Apenas alunos matriculados podem participar do processo e ocupar cargos.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Vou aprender do zero?</summary>
+            <p class="muted">Sim. As trilhas começam do básico e evoluem por projetos, sem pular fundamentos.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>O que eu ganho no final?</summary>
+            <p class="muted">Um portfólio com projetos publicados (deploy), repositórios organizados e vivência de práticas do mercado.</p>
+          </details>
+        </div>
+
+        <div class="cta">
+          <div class="cta__content">
+            <h3>Pronto para entrar?</h3>
+            <p>Faça seu cadastro e receba as próximas datas de oficinas e palestras.</p>
+          </div>
+          <a class="btn btn--primary" href="cadastro.html">Cadastrar agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__logo" aria-hidden="true">{"</>"}</span>
+          <span class="brand__text">
+            <strong>ClubeDS</strong>
+            <small>Clube de Programação</small>
+          </span>
+        </div>
+        <p class="muted">
+          Um ambiente pedagógico e didático focado no desenvolvimento prático dos alunos.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <a href="atividades.html">Atividades</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer__meta muted">
+        <p>© <span data-year></span> ClubeDS. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
